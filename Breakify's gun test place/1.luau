@@ -29,7 +29,7 @@ for _: unknown, v: (...any) -> (...any) in (getgc(false)) do
 		local constants: {any} = debug.getconstants(v);
 		local index: number? = table_find(constants, "UGCValidationService");
 		if (index) then
-			debug.setconstant(v, index, "fuck u");
+			debug.setconstant(v, index, "StudioPublishService");
 		end;
 	end;
 end;
